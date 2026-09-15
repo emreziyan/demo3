@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 116 80">
+  <!-- Generator: Adobe Illustrator 30.8.1, SVG Export Plug-In . SVG Version: 2.1.4 Build 1)  -->
+  <defs>
+    <style>
+      .st0 {
+        mask: url(#mask);
+      }
+
+      .st1 {
+        fill: #fff;
+      }
+
+      .st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8 {
+        fill-rule: evenodd;
+      }
+
+      .st2 {
+        fill: #d8d8d8;
+      }
+
+      .st3 {
+        fill: #00833e;
+      }
+
+      .st4 {
+        fill: #e63b15;
+      }
+
+      .st9 {
+        isolation: isolate;
+      }
+
+      .st10 {
+        mask: url(#mask-1);
+      }
+
+      .st5 {
+        fill: url(#linear-gradient);
+      }
+
+      .st6 {
+        fill: url(#linear-gradient1);
+      }
+
+      .st7 {
+        fill: url(#linear-gradient2);
+      }
+
+      .st8 {
+        fill: #e84715;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-616.9" y1="409.7" x2="-616.1" y2="409.7" gradientTransform="translate(34916.9583 9534.6553) scale(56.5446 -23.189)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <mask id="mask" x="84.2" y="-2.1" width="27" height="31.8" maskUnits="userSpaceOnUse">
+      <g id="mask-3">
+        <path id="path-21" data-name="path-2" class="st1" d="M100.1,0c-2.9.4-5.4,2.4-7.3,4.7h0c-1,1.2-1.9,2.6-2.8,4h0c-.4.7-.8,1.5-1.2,2.3h0c-.2.4-1.1,1.6-1,2.1h0c.2.9,1.1,1.8,1.5,2.4h0c.6.9,1.2,1.8,1.9,2.6h0c1.4,1.8,2.8,3.6,4.5,5h0c3.7,3.3,9.1,4.7,12.2,0h0c1.1-1.7,1.5-4.2.3-6h0c-1.9-2.7-7.3-2.6-11.3-.9h0c.8-1.4,6.4-1.7,8.1-3.1h0c2.8-2.1,2.9-5.7,1.6-9.2h0C105.6,1.4,103.4,0,101,0h0c-.3,0-.6,0-.9,0"/>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient1" x1="-602.6" y1="414.1" x2="-602.6" y2="413.4" gradientTransform="translate(15415.9377 13159.9373) scale(25.4213 -31.7766)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fee6a4"/>
+      <stop offset=".7" stop-color="#e30613"/>
+      <stop offset="1" stop-color="#e30613"/>
+    </linearGradient>
+    <mask id="mask-1" x="63" y="3.7" width="39.6" height="35.9" maskUnits="userSpaceOnUse">
+      <g id="mask-6">
+        <path id="path-51" data-name="path-5" class="st1" d="M69.6,16.3c1.9-2.1,5-3,8-3.3h0c1.6-.2,3.3-.2,5,0h0c.9,0,1.8.1,2.6.2h0c.5,0,2,0,2.4.3h0c.6.6.9,1.8,1.3,2.4h0c.5.9,1,1.9,1.4,2.9h0c.9,2,1.7,4.1,2.1,6.2h0c1,4.7-.6,9.7-6.5,9.7h0c-2.1,0-4.5-1-5.5-2.9h0c-1.5-2.9,1.6-7.1,5.1-9.4h0c-1.7,0-4.9,4.1-7,4.8h0c-3.4,1.1-6.6-.7-9-3.6h0c-1.8-2.2-1.9-4.7-.7-6.6h0c.2-.2.3-.5.5-.7"/>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient2" x1="-629.3" y1="402.2" x2="-629.2" y2="401.4" gradientTransform="translate(2411.1206 20180.2526) rotate(122) scale(25.2068 31.5084)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fee6a4"/>
+      <stop offset=".7" stop-color="#e30613"/>
+      <stop offset="1" stop-color="#e30613"/>
+    </linearGradient>
+  </defs>
+  <g id="Symbols">
+    <g id="header">
+      <g id="Group-2-Copy">
+        <path id="Fill-1" class="st3" d="M35.2,79.7c-4.5,0-8-3.6-8-8v-16.4c0-1.1-.4-2.1-1-2.7-.1,0-.3-.1-.3-.3s0-.2.2-.3h7.1c.2,0,.3.1.3.3s-.1.3-.3.3c-.6.6-1,1.6-1,2.7v15.7c0,1.8,1.4,3.3,3,3.3s3-1.5,3-3.3v-15.7c0-1.1-.4-2.1-1-2.7-.2,0-.3-.1-.3-.3s.1-.3.3-.3h7.1c.1,0,.2.1.2.3s-.1.3-.3.3c-.6.6-1,1.5-1,2.7v16.4c0,4.4-3.7,8-8.1,8h0ZM77.2,79.7c-4.5,0-8-3.6-8-8v-16.4c0-1.1-.4-2.1-1-2.7-.1,0-.3-.1-.3-.3s0-.2.2-.3h7.1c.2,0,.3.1.3.3s-.1.3-.3.3c-.6.6-1,1.6-1,2.7v15.7c0,1.8,1.4,3.3,3,3.3s3-1.5,3-3.3v-15.7c0-1.1-.4-2.1-1-2.7-.2,0-.3-.1-.3-.3s.1-.3.3-.3h7.1c.1,0,.2.1.2.3s-.1.3-.3.3c-.6.6-1,1.5-1,2.7v16.4c0,4.4-3.7,8-8.1,8h0ZM.5,28.1c-.2-.1-.5-.2-.5-.4s.1-.3.3-.3h11.8s.2,0,.2.3-.2.3-.2.3c-.3.4-.6,1-.8,1.5-.3,1,.4,2.6.4,2.6l9.8,19.4v21.9s.3,2.4.6,3.4c.2.8.9,1.6,1.3,2.2.2,0,.4.2.4.3s-.1.3-.3.3h-10.4c-.2,0-.3-.1-.3-.3s.1-.4.3-.4c.4-.5,1-1.3,1.4-2.1.5-1.1.6-3.6.6-3.6v-20.7S4.3,32.4,3.3,31c-.6-.9-1.9-2.1-2.8-2.9H.5ZM100.1,78.8c-.2,0-.4,0-.4-.1s.3-.6.3-.6c.5-.5-4.2-19.9-4.2-19.9v17.5c0,1,.4,1.9.9,2.4,0,0,.3.3.3.4s-.1.3-.3.3h-6.7c-.2,0-.3-.1-.3-.3s.3-.4.3-.4c.5-.5.9-1.4.9-2.4v-20.5c0-1-.3-1.9-.9-2.4,0,0-.3-.3-.3-.4s.1-.3.3-.3h8.5c.2,0,.4,0,.4.2s-.2.5-.2.5c-.5.5,3.7,16.5,3.7,16.5,0,0,4.5-15.9,4-16.5,0,0-.2-.4-.2-.5s.2-.2.4-.2h8.3c.2,0,.3.1.3.3s-.3.4-.3.4c-.5.5-.9,1.4-.9,2.4v20.5c0,1,.3,1.9.9,2.4,0,0,.3.3.3.4s-.1.3-.3.3h-6.7c-.2,0-.3-.1-.3-.3s.3-.4.3-.4c.5-.5.9-1.4.9-2.4v-17.7c0,0-4.9,19.5-4.3,20,0,0,.3.5.3.6s-.2.1-.4.1h-4.3ZM32.6,27.3s-5.8,5.7-7.1,7.8c-1.3,2.1-2.9,6.3-3,9.7,0,2.6-.3,3.9.9,3.9s.6-1.7,1.8-3.7c2.1-3.7,5.5-7.4,9-10.2,3.5-2.8,8.7-8.1,10.2-12.2,1.5-4.2,1.7-7.7,1.8-8.6,0-.9,0-1.4-.6-1.4s-1.7,3.2-3,4.9c-1.8,2.3-10,9.8-10,9.8h0ZM55.6,56.9c2.5.4,5.3.9,5.3,9.1s-2.4,8-5.3,8h-2.5v-17h2.4ZM56.9,52.1c5.9,0,8.8,5.4,9.2,13.3-.1,7-3.6,13.4-9.2,13.4h-9.6c-.2,0-.3-.1-.3-.3s.3-.4.3-.4c.5-.5.9-1.4.9-2.4v-20.5c0-1-.3-1.9-.8-2.4,0,0-.3-.3-.3-.4s.1-.3.3-.3h9.6Z"/>
+        <path id="Fill-11" data-name="Fill-1" class="st5" d="M94.8,27.3c.7,3.4-.3,6.7-2.2,9.7-1.8,2.8-5.2,4-8.3,4-2.6,0-5.1-.7-7.5-1.5-4.6-1.6-8.9-3.6-13.6-5-3.8-1.1-7.8-1.2-11.8,0-3.6,1-7.3,2.8-10.1,5.3-.9.8-1.6,1.6-2.3,2.5-.8,1-1.4,2.1-1.8,3.2.4-.5,2-1.6,2.5-2.1,3-2.6,6.4-4.6,10.2-5.8,4.1-1.2,8.4-1,12.3,0,2.6.7,5,1.8,7.5,2.9,3.7,1.6,7.5,3.1,11.5,3.8,1.3.2,2.6.4,4,.3,3.4-.1,6.8-1.7,9.1-4.3,1.3-1.4,2.1-3.1,2.5-4.8,1-3.8,0-7.6-1.9-10.8-.3-.6-.7-1.2-1.1-1.7-.2-.3-.5-.6-.6-.9.6,1.6,1.3,3.3,1.7,5"/>
+        <g id="Fill-12" data-name="Fill-1">
+          <g id="Mask">
+            <path id="path-2" class="st2" d="M100.1,0c-2.9.4-5.4,2.4-7.3,4.7h0c-1,1.2-1.9,2.6-2.8,4h0c-.4.7-.8,1.5-1.2,2.3h0c-.2.4-1.1,1.6-1,2.1h0c.2.9,1.1,1.8,1.5,2.4h0c.6.9,1.2,1.8,1.9,2.6h0c1.4,1.8,2.8,3.6,4.5,5h0c3.7,3.3,9.1,4.7,12.2,0h0c1.1-1.7,1.5-4.2.3-6h0c-1.9-2.7-7.3-2.6-11.3-.9h0c.8-1.4,6.4-1.7,8.1-3.1h0c2.8-2.1,2.9-5.7,1.6-9.2h0C105.6,1.4,103.4,0,101,0h0c-.3,0-.6,0-.9,0"/>
+          </g>
+          <g class="st0">
+            <polygon class="st6" points="108.4 -2.1 84.2 0 87 29.7 111.2 27.6 108.4 -2.1"/>
+          </g>
+        </g>
+        <g id="Fill-1-Copy">
+          <g id="Mask1" data-name="Mask">
+            <path id="path-5" class="st2" d="M69.6,16.3c1.9-2.1,5-3,8-3.3h0c1.6-.2,3.3-.2,5,0h0c.9,0,1.8.1,2.6.2h0c.5,0,2,0,2.4.3h0c.6.6.9,1.8,1.3,2.4h0c.5.9,1,1.9,1.4,2.9h0c.9,2,1.7,4.1,2.1,6.2h0c1,4.7-.6,9.7-6.5,9.7h0c-2.1,0-4.5-1-5.5-2.9h0c-1.5-2.9,1.6-7.1,5.1-9.4h0c-1.7,0-4.9,4.1-7,4.8h0c-3.4,1.1-6.6-.7-9-3.6h0c-1.8-2.2-1.9-4.7-.7-6.6h0c.2-.2.3-.5.5-.7"/>
+          </g>
+          <g class="st10">
+            <polygon id="Fill-13" data-name="Fill-1" class="st7" points="63 21.8 77.5 3.7 102.6 21.5 88.1 39.6 63 21.8"/>
+          </g>
+        </g>
+        <g id="Group">
+          <path id="Fill-16" class="st4" d="M91.3,19.2s0,0,0,0c0,0,0,0-.2,0-.5-.1-2.2-2.8-3.1-4.3-.7-1.2-1.3-2.3-1.7-3.2-.7-1.5-.5-1.6-.4-1.6.5-.3,2.4,2.9,3.2,4.2.8,1.4,2.4,4.2,2.3,4.7,0,0,0,0,0,0"/>
+          <path id="Fill-18" class="st8" d="M86.1,9.9h-.5c0,0,0,0,0,0h-.2c0-.1-.7-5.2-.7-5.2-.3-.2-.4-.6,0-.8.3-.1.5,0,.6.2,0,.2,0,.4-.1.6l.7,5.2ZM85.7,10l-.3.3-4.5-3.4c-.5,0-.8-.6-.3-.8.4-.2.7.2.7.5l4.3,3.2v.2s.1,0,.1,0ZM85.6,10v-.2s.1.1.1.1h0c0,0,0,0,0,0Z"/>
+        </g>
+        <image id="Image-21" class="st9" width="31" height="32" transform="translate(80.7 25.3) rotate(-80.5) scale(.5 .5) skewX(1.1)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAAsSAAALEgHS3X78AAADE0lEQVRIicWW3W9bRRDFf2eu7ZukcdIobSKSRgJSBAj1/39CvPBUgZB44YEvqVACbZoG12lrO7uHh10XK0Kxa0dkpJV3r/bOOTNzZnzFkmZb070kL+MjlgWv1qzy8tLgNdq1VXws/aLtALZuBbzaxm2BC+gDndsC317Fx0rgKaU+VfG2Ndt+NwJehTV7Vn0WwCbQqWddudfMI7NI5I3tO7ajOmsodW6bpulTRNepS5XcBtDOGz6LiCVRItwHToAusD4ajbbatt2vzy+BMfAW2KlBncxzvAi4gQFwH3gEvAC227bdAw6BT4Ae8HIymWx2u90AfgAmNwEOJfoz4EPgi5SSm6Z5kFJ6KOltRNwDRt1udwh8Q8lEYztdl/pFwKPeE/Am53ws6SPgbtM0x7Y3UkofS/ozIr6ud9tKIFMytxy4pFTVvAZsRMS67U9tf2B7R9JWROzlnCeUodMHTgFLytf57swouFvJ9Crz7mg0aiW1FMEdAp8Bx5J2c873JHXr3YiIo5zzo4hIlJl/avv1aDQat207BkYUUV5S9HA5jTwq6BqwXsE22rZdB+4Ad4GDnPORpPuS1iRNSyHbPUnbkvaBIyCllDZtD9q2vQCm6w2lIxJApwpibHsCvKpEdOW3DxxExHMg55x3ImKzRp0lDW3/Yvs7SY+Bn5qmeVHBXFee2VuS39W8kpheeme2m0rgHHgKDCQ9tz0GHtj+u5IeRMQT4Fk9vwYm19V90T6/BIZAJ+c8jIivUkqHEWFJP9t+EhGTmqnzmtprlf4+4BNK3TsR8SXQb5rmwPa2pMeSfgVeUoS2C/wBXNvjC4FLsu0+RYzfVjKbwJntzyV9D/xOSXUC9oBdSU/n+Z4LbrtH6YAfKenvUpQ7jIiT8Xj8W6/XO+HfFjoFdm33Jb1aCZxSu2d12Kiex5QMnPV6vXNK1FAHi+2/KONVK41XSZcz+2lHUNU+AEYzxKb3MpDn/Z8v/f1FycAFdWD8V4TzBLfq1+uAUuulbBVwU3r61sAvuDIR/0/w4SrgK5nt3vt+Lt80gaXB/wG3kmzD9KmeuwAAAABJRU5ErkJggg=="/>
+      </g>
+    </g>
+  </g>
+</svg>
