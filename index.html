@@ -117,10 +117,10 @@
   /* ══ ① HERO — Figma 5:2 ═════════════════════════════ */
   .hero{--h:1080;background:var(--sky)}
   .lay{position:absolute;left:0;top:0;width:1920px;height:1080px;will-change:transform}
-  .hero__sky{left:0;top:-139px;width:1920px;height:1271px;object-fit:cover}
+  .hero__sky{left:-24px;top:-139px;width:1968px;height:1271px;object-fit:cover}
   .hero__title{left:165px;top:215px;width:1589px;text-align:center;font-size:160px;line-height:166px;letter-spacing:4.8px;color:#fff;text-transform:uppercase}
-  .hero__olive{left:624px;top:680px;width:256px;height:507px}
-  .hero__sun{left:1026.74px;top:404.08px;width:234px;height:604.339px;transform:rotate(-3.79deg)}
+  .hero__olive{left:283px;top:560px;width:256px;height:507px;transform:rotate(3deg)}
+  .hero__sun{left:1326px;top:250px;width:234px;height:604.339px;transform:rotate(-5.5deg)}
   .hero__sun img{position:absolute;left:0;top:0;width:237.654px;height:613.775px}
   .hero__clouds{left:-127px;top:304px;width:2112px;height:739.2px}
   .hero__fade{left:0;top:934px;width:1920px;height:191px;background:linear-gradient(to bottom,rgba(247,246,241,0),#fff)}
@@ -268,7 +268,7 @@
   .y-social-heading .y-kicker{margin-top:6px;font-size:9px;color:var(--muted)}
   .y-social-mark{width:38px;height:38px}
   .y-social-links{display:flex;align-items:center;gap:30px;font-size:11px}
-  .y-social-links a{padding:14px 0;border-bottom:1px solid transparent}
+  .y-social-links a,.y-social-links span{padding:14px 0;border-bottom:1px solid transparent}
   .y-social-links a:hover{border-color:currentColor}
   .y-footer{background:#e5e7d9;padding:55px var(--pad) 24px}
   .y-footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:45px;padding-bottom:52px}
@@ -544,7 +544,7 @@
 .y-footer nav button,.y-footer nav a{font:inherit;text-align:left}
 .y-footer-label{font:400 11px/14px var(--mar);letter-spacing:1.9px;color:#7a6450;margin:24px 0 6px}
 .y-footer-contact{position:relative;font:400 15px/20px var(--sans);padding-bottom:64px}.y-footer-contact>h3+.y-footer-label{margin-top:0}.y-footer-contact>a{display:block;margin-top:6px}
-.y-footer-social{display:flex;align-items:center;gap:30px;margin-top:22px}.y-footer-social a{display:flex;width:20px;height:20px;align-items:center;justify-content:center}.y-footer-social img{width:100%;height:100%;object-fit:contain}
+.y-footer-social{display:flex;align-items:center;gap:30px;margin-top:22px}.y-footer-social a,.y-footer-social span{display:flex;width:20px;height:20px;align-items:center;justify-content:center}.y-footer-social img{width:100%;height:100%;object-fit:contain}
 .y-tiryaki{position:absolute;bottom:24px;right:0;width:120px;height:37px;object-fit:contain}
 .y-footer-base{height:68px;padding:22px 0 28px;border-top:1px solid var(--line);font:400 12px/18px var(--sans);color:#7a6450}.y-footer-base>div{display:flex;gap:28px;font:400 12px/18px var(--mar);letter-spacing:1.7px;color:#2a3a27}
 .y-dialog{background:#efe8dc;color:#45311f}.y-dialog-close{background:#efe8dc;color:#45311f;border-color:#45311f}.y-dialog-content h2{font-family:var(--custom);font-weight:400}.y-dialog :focus-visible{outline-color:#45311f}
@@ -626,8 +626,8 @@
 .y-footer nav a:hover,.y-footer nav button:hover,.y-footer-contact>a:hover,.y-footer-base a:hover,.y-footer-base button:hover,
 .y-footer nav a:focus-visible,.y-footer nav button:focus-visible,.y-footer-contact>a:focus-visible,.y-footer-base a:focus-visible,.y-footer-base button:focus-visible{color:#FF5E00;text-decoration:none}
 /* Social strip links: orange on hover, never underlined. */
-.y-social-links a{border-bottom:0;text-decoration:none;transition:color .25s ease}
-.y-social-links a:hover,.y-social-links a:focus-visible{color:#FF5E00;border-color:transparent;text-decoration:none}
+.y-social-links a,.y-social-links span{border-bottom:0;text-decoration:none;transition:color .25s ease}
+.y-social-links a:hover,.y-social-links a:focus-visible,.y-social-links span:hover{color:#FF5E00;border-color:transparent;text-decoration:none}
 
 @media(min-width:901px) and (max-width:1700px){
  .y-recipes{padding-top:44px}.y-intro{height:290px}.y-intro .y-title{top:82px}.y-intro p{top:185px;right:0}.y-intro .y-brand-flower{top:48px}
@@ -649,7 +649,7 @@
  .nav.menu-open{background:#239fcc;transform:none}.nav.menu-open .nav__links{display:flex;flex-direction:column}.nav__links a{height:auto;padding:16px 0;border-bottom:1px solid #ffffff50;font-size:14px}
  .nav .search{left:0;top:80px;width:100%;height:auto;min-height:100px;padding:24px}.search input{position:static;width:100%;font-size:18px}
  .hero{height:760px;min-height:85svh;max-height:1000px}.hero .art{width:100%;height:100%;transform:none}.hero .lay{width:100%;height:100%}
- .hero__sky{left:0;top:0;width:100%;height:100%;object-fit:cover}.hero__title{left:5%;top:150px;width:90%;font-size:clamp(48px,9vw,80px);line-height:1.06;letter-spacing:.025em}
+ .hero__sky{left:-3%;top:0;width:106%;height:100%;object-fit:cover}.hero__title{left:5%;top:150px;width:90%;font-size:clamp(48px,9vw,80px);line-height:1.06;letter-spacing:.025em}
  .hero__olive{left:27%;top:64%;width:17%;height:auto}.hero__sun{left:54%;top:41%;width:20%;height:auto;aspect-ratio:238/614}.hero__sun img{width:100%;height:100%;object-fit:contain}.hero__clouds{left:-20%;top:35%;width:140%;height:55%;object-fit:cover}.hero__fade{left:0;top:auto;bottom:0;width:100%;height:15%}
  .stage{height:auto;overflow:hidden;scroll-margin-top:80px}.stage>.art{position:relative;width:100%;height:auto;transform:none}.stage .slide{position:relative;width:100%;height:auto;min-height:0;display:none;overflow:visible;padding:42px 24px 28px}
  .stage .slide.is-active,.stage .slide.is-moving{display:grid;grid-template-columns:1fr;gap:18px}.stage .slide.is-moving{position:absolute;inset:0}
@@ -770,14 +770,14 @@
       <div class="lay" data-depth=".24" data-mouse="16" data-fade="1">
         <h1 class="a hero__title marsc">İyiliği<br />doğadan,<br />hafifliği<br />Yudum’dan</h1>
       </div>
-      <div class="lay" data-depth="-.08" data-mouse="30">
-        <img class="a hero__olive" data-rot=".006" src="assets/images/hero-olive.webp" alt="Yudum Egemden Natürel Sızma Zeytinyağı" />
-      </div>
-      <div class="lay" data-depth="-.2" data-mouse="46">
-        <div class="a hero__sun" data-rot="-.007" data-base="-3.79"><img src="assets/images/hero-sunflower.webp" alt="Yudum Ayçiçek Yağı" /></div>
-      </div>
       <div class="lay" data-depth="-.3" data-mouse="60">
         <img class="a hero__clouds" src="assets/images/clouds-front.webp" alt="" />
+      </div>
+      <div class="lay" data-depth="-.08" data-mouse="30">
+        <img class="a hero__olive" data-rot="-0.015741" data-base="3" src="assets/images/hero-olive.webp" alt="Yudum Egemden Natürel Sızma Zeytinyağı" />
+      </div>
+      <div class="lay" data-depth="-.2" data-mouse="46">
+        <div class="a hero__sun" data-rot="0.014352" data-base="-5.5"><img src="assets/images/hero-sunflower.webp" alt="Yudum Ayçiçek Yağı" /></div>
       </div>
       <div class="a hero__fade" aria-hidden="true"></div>
     </div>
@@ -802,7 +802,7 @@
           <p class="a idx-num mar">01<span class="idx-of">/03</span></p>
           <span class="a idx-dash"></span>
           <p class="a idx-lbl cap10">AYÇİÇEK YAĞI</p>
-          <a class="a box marsc" href="https://yudumtoptan.com/">ÜRÜNLERİ İNCELE</a>
+          <button class="a box marsc" type="button">ÜRÜNLERİ İNCELE</button>
         </div>
         <div class="prod"><img class="botany" src="assets/images/figma-imgSunflowerBck1.png" alt="" style="left:658px;top:425px;width:603px;height:322px" /><img src="assets/images/figma-imgYudumAycicekYagi1L.png" alt="Yudum Ayçiçek Yağı 1 L" style="left:863px;top:243px;width:193.4px;height:560px" /></div>
         <div class="slide__c product-copy">
@@ -826,7 +826,7 @@
           <p class="a idx-num mar">02<span class="idx-of">/03</span></p>
           <span class="a idx-dash"></span>
           <p class="a idx-lbl cap10">ZEYTİNYAĞI</p>
-          <a class="a box marsc" href="https://yudumtoptan.com/">ÜRÜNLERİ İNCELE</a>
+          <button class="a box marsc" type="button">ÜRÜNLERİ İNCELE</button>
         </div>
         <div class="prod"><img class="botany" src="assets/images/figma-imgOlivebck1.png" alt="" style="left:727px;top:307px;width:433px;height:450px" /><img src="assets/images/figma-imgYudumEgemdenNaturelSizmaZeytinyagi1L.png" alt="Yudum Egemden Natürel Sızma Zeytinyağı 1 L" style="left:873px;top:222px;width:173.1px;height:574px" /></div>
         <div class="slide__c product-copy">
@@ -850,7 +850,7 @@
           <p class="a idx-num mar">03<span class="idx-of">/03</span></p>
           <span class="a idx-dash"></span>
           <p class="a idx-lbl cap10">PROFESYONEL — VALA</p>
-          <a class="a box marsc" href="https://yudumtoptan.com/">ÜRÜNLERİ İNCELE</a>
+          <button class="a box marsc" type="button">ÜRÜNLERİ İNCELE</button>
         </div>
         <div class="prod"><img src="assets/images/stage-vala.webp" alt="Vala Pastacılık bitkisel margarin kolisi" style="left:711.4px;top:418px;width:497.2px;height:364px;filter:drop-shadow(0 36px 40px rgba(0,0,0,.28))" /></div>
         <div class="slide__c product-copy">
@@ -912,7 +912,7 @@
   <section class="y-section y-social" id="sosyal" aria-label="Sosyal medya">
     <div class="y-social-heading"><img class="y-social-mark" src="assets/images/current-imgAycicegiCizimi1.svg" alt=""><div><p>Bir yudum da ilham.</p><div class="y-kicker">SOFRADA, HAYATTA, HER GÜN.</div></div></div>
     <div class="y-social-gallery" aria-label="Sosyal medya görselleri" tabindex="0"><div><img src="assets/images/Firefly_Gemini%20Flash_a%20lady%20from%20Aegean%20part%20with%20aegean%20sea%20at%20the%20background%20581561.png" alt="Ege kıyısında zeytin toplayan gülümseyen kadın" style="object-position:52% center" loading="lazy" draggable="false"></div><div><img src="assets/images/Firefly_olive%20trees%20on%20a%20bright%20day%20at%20the%20mediterrenean%20516092.jpg" alt="Denize bakan yamaçta zeytin ağaçları" style="object-position:62% center" loading="lazy" draggable="false"></div><div><img src="assets/images/Firefly_Gemini-Flash_a-turkish-villager-lady-from-Aegean-part-80386.jpg" alt="Zeytinlikte elinde zeytin sepetiyle köylü kadın" style="object-position:70% center" loading="lazy" draggable="false"></div><div><img src="assets/images/Firefly_sun%20flower%20field%20396011.jpg" alt="Gün batımında ayçiçeği tarlası" style="object-position:70% center" loading="lazy" draggable="false"></div><div><img src="assets/images/Firefly_olive%20trees%20on%20a%20bright%20day%20at%20the%20mediterrenean%20662714.jpg" alt="Mavi gökyüzü altında yaşlı zeytin ağacı" style="object-position:52% center" loading="lazy" draggable="false"></div><div><img src="assets/images/Firefly_olive%20trees%20on%20a%20bright%20day%20at%20the%20mediterrenean%20899736.jpg" alt="Deniz kenarında yeşil çayırda zeytin ağaçları" style="object-position:80% center" loading="lazy" draggable="false"></div></div>
-    <div class="y-social-links" lang="en"><a href="https://www.facebook.com/YudumYag/" target="_blank" rel="noopener noreferrer">Facebook</a><a href="https://www.instagram.com/yudumyag/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.linkedin.com/company/yudum/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://www.youtube.com/@YudumYag" target="_blank" rel="noopener noreferrer">YouTube</a></div>
+    <div class="y-social-links" lang="en"><span>Facebook</span><span>Instagram</span><span>LinkedIn</span><span>YouTube</span></div>
   </section>
 </main>
 <footer class="y-footer" id="iletisim">
@@ -923,10 +923,10 @@
   <div class="y-sitemap">
     <nav aria-label="Alt menü ürünler"><h3>ÜRÜNLER</h3><ul><li><a href="#urunler" data-go="0">Ayçiçek Yağları</a></li><li><a href="#urunler" data-go="1">Egemden Zeytinyağları</a></li></ul></nav>
     <nav aria-label="Alt menü tarifler"><h3>İLHAM VEREN TARİFLER</h3><ul><li><button data-detail="pot">Tencere Yemekleri</button></li><li><button data-detail="olive">Zeytinyağlı Tarifleri</button></li><li><button data-detail="crisp">Kızartma Tarifleri</button></li><li><button data-detail="oven">Fırın Yemekleri</button></li></ul></nav>
-    <nav aria-label="Alt menü Yudum dünyası"><h3>YUDUM DÜNYASI</h3><ul><li><button data-detail="journal">Hikayemiz</button></li><li><a href="https://yudumtoptan.com/" target="_blank" rel="noopener noreferrer">Üretim Tesislerimiz &amp; Kalite</a></li><li><a href="#iyilik">Sosyal Sorumluluk Projeleri</a></li></ul></nav>
+    <nav aria-label="Alt menü Yudum dünyası"><h3>YUDUM DÜNYASI</h3><ul><li><button data-detail="journal">Hikayemiz</button></li><li><button type="button">Üretim Tesislerimiz &amp; Kalite</button></li><li><a href="#iyilik">Sosyal Sorumluluk Projeleri</a></li></ul></nav>
     <nav aria-label="Alt menü profesyonel"><h3>PROFESYONEL ÇÖZÜMLER</h3><ul><li><a href="#urunler" data-go="2">Endüstriyel Çözümler</a></li><li><a href="#urunler" data-go="2">Pastacılık Çözümleri</a></li><li><a href="#urunler" data-go="2">Yudum Professional</a></li></ul></nav>
-    <nav aria-label="Alt menü kurumsal"><h3>KURUMSAL</h3><ul><li><button data-detail="journal">Hakkımızda</button></li><li><button data-detail="contact">İletişim</button></li><li><button data-detail="contact">İhracat</button></li></ul><p class="y-footer-label">YASAL</p><ul><li><a href="https://yudumtoptan.com/" target="_blank" rel="noopener noreferrer">KVKK Aydınlatma Metni</a></li><li><a href="https://yudumtoptan.com/" target="_blank" rel="noopener noreferrer">Gizlilik Politikası</a></li><li><a href="https://yudumtoptan.com/" target="_blank" rel="noopener noreferrer">Çerez Politikası</a></li><li><button data-detail="contact">Sık Sorulan Sorular</button></li></ul></nav>
-    <nav class="y-footer-contact" aria-label="Alt menü iletişim"><h3>BİZE ULAŞIN</h3><p class="y-footer-label">ÇAĞRI MERKEZİ</p><p>0850 000 00 00</p><a href="mailto:info@yudum.com.tr">info@yudum.com.tr</a><p class="y-footer-label y-follow-label">TAKİP ET</p><div class="y-footer-social"><a href="https://www.instagram.com/yudumyag/" aria-label="Instagram"><img src="assets/images/current-imgGroup.svg" alt=""></a><a href="https://x.com/YudumYag" aria-label="X"><img src="assets/images/current-imgFrame2.svg" alt=""></a><a href="https://www.youtube.com/@YudumYag" aria-label="YouTube"><img src="assets/images/current-imgGroup1.svg" alt=""></a><a href="https://www.facebook.com/YudumYag/" aria-label="Facebook"><img src="assets/images/current-imgFrame3.svg" alt=""></a><a href="https://www.linkedin.com/company/yudum/" aria-label="LinkedIn"><img src="assets/images/current-imgGroup2.svg" alt=""></a></div><img class="y-tiryaki" src="assets/images/current-imgTiryakiLogoVectorSvg1.png" alt="Tiryaki"></nav>
+    <nav aria-label="Alt menü kurumsal"><h3>KURUMSAL</h3><ul><li><button data-detail="journal">Hakkımızda</button></li><li><button data-detail="contact">İletişim</button></li><li><button data-detail="contact">İhracat</button></li></ul><p class="y-footer-label">YASAL</p><ul><li><button type="button">KVKK Aydınlatma Metni</button></li><li><button type="button">Gizlilik Politikası</button></li><li><button type="button">Çerez Politikası</button></li><li><button data-detail="contact">Sık Sorulan Sorular</button></li></ul></nav>
+    <nav class="y-footer-contact" aria-label="Alt menü iletişim"><h3>BİZE ULAŞIN</h3><p class="y-footer-label">ÇAĞRI MERKEZİ</p><p>0850 000 00 00</p><a href="mailto:info@yudum.com.tr">info@yudum.com.tr</a><p class="y-footer-label y-follow-label">TAKİP ET</p><div class="y-footer-social"><span role="img" aria-label="Instagram"><img src="assets/images/current-imgGroup.svg" alt=""></span><span role="img" aria-label="X"><img src="assets/images/current-imgFrame2.svg" alt=""></span><span role="img" aria-label="YouTube"><img src="assets/images/current-imgGroup1.svg" alt=""></span><span role="img" aria-label="Facebook"><img src="assets/images/current-imgFrame3.svg" alt=""></span><span role="img" aria-label="LinkedIn"><img src="assets/images/current-imgGroup2.svg" alt=""></span></div><img class="y-tiryaki" src="assets/images/current-imgTiryakiLogoVectorSvg1.png" alt="Tiryaki"></nav>
   </div>
   <div class="y-footer-base"><p>© 2026 Yudum. Tüm hakları saklıdır.</p><div><button class="y-language" type="button">TR — EN</button><a href="#top">BAŞA DÖN</a></div></div>
 </footer>
@@ -982,7 +982,7 @@
     var layers = [].map.call(hero.querySelectorAll('[data-depth]'), function(el){
       return {el:el, d:+el.dataset.depth, m:+(el.dataset.mouse || 0), f:!!el.dataset.fade};
     });
-    /* bottles turn gently with scroll, around their own centre; eased so it feels soft */
+    /* bottles turn with scroll around their own centre, eased: data-base = angle at top, data-rot = deg per art px over the 1080px hero (olive 3°→-14°, sunflower -5.5°→10°) */
     var spins = [].map.call(hero.querySelectorAll('[data-rot]'), function(el){
       return {el:el, r:+el.dataset.rot, b:+(el.dataset.base || 0)};
     });
@@ -998,7 +998,7 @@
       var y = Math.max(0, Math.min(scrollY / s, 1080));
       layers.forEach(function(L){
         L.el.style.transform = 'translate3d(' + (-mx * L.m).toFixed(2) + 'px,' + (y * L.d - my * L.m * .5).toFixed(2) + 'px,0)';
-        if(L.f) L.el.style.opacity = (1 - (y / 1080) * 1.1).toFixed(3);
+        if(L.f) L.el.style.opacity = Math.max(0, 1 - Math.max(0, y - 300) / 650).toFixed(3); /* title holds full opacity for the first 300px of scroll */
       });
       ry += (y - ry) * .12;
       spins.forEach(function(R){
@@ -1041,12 +1041,16 @@
       from.classList.remove('is-active'); next.classList.add('is-active'); cur = to; return;
     }
     busy = true;
+    // Clip before the slide becomes visible, or it shows unclipped for one frame.
+    var startClip = dir > 0 ? 'inset(0 0 0 100%)' : 'inset(0 100% 0 0)';
+    next.style.clipPath = startClip;
     next.classList.add('is-moving');
 
     // Colour curtain (reference: Domingo) — the next slide is revealed edge-to-edge.
+    // fill:forwards holds the open state until the class swap, so the curtain never snaps back.
     var wipe = next.animate(
-      [{clipPath: dir > 0 ? 'inset(0 0 0 100%)' : 'inset(0 100% 0 0)'}, {clipPath:'inset(0 0% 0 0%)'}],
-      {duration:DUR, easing:EASE});
+      [{clipPath: startClip}, {clipPath:'inset(0 0% 0 0%)'}],
+      {duration:DUR, easing:EASE, fill:'forwards'});
 
     // Incoming layers settle at different speeds behind the curtain edge.
     var tx = function(v){ return 'translateX(' + v + 'px)'; };
@@ -1068,6 +1072,8 @@
       from.querySelectorAll('details[open]').forEach(function(d){ d.open = false; });
       next.classList.add('is-active');
       next.classList.remove('is-moving');
+      next.style.clipPath = '';
+      try{ wipe.cancel(); }catch(e){}
       cur = to; busy = false;
       if(pending){ var p = pending; pending = null; go(p[0], p[1]); }
     };
@@ -1247,7 +1253,7 @@
     {title:'Her sofraya<br>bir yudum iyilik.',description:'Ayçiçek yağlarından Egemden natürel sızma zeytinyağlarına; günlük mutfağın hafif ve lezzetli yağları.',label:'ÜRÜNLER',cta:'TÜM ÜRÜNLER',href:'#urunler',links:[['Ayçiçek Yağları','#urunler',0],['Egemden Zeytinyağları','#urunler',1]],type:'product'},
     {title:'Bugün sofranızda<br>ne var?',description:'Mevsimin malzemeleri, bir yudum ilham. Her gün yeniden keşfedilecek lezzetler.',label:'İLHAM VEREN TARİFLER',cta:'TÜM TARİFLER',href:'#tarifler',links:[['Tencere Yemekleri','#tarifler'],['Zeytinyağlı Tarifleri','#tarifler'],['Kızartma Tarifleri','#tarifler'],['Fırın Yemekleri','#tarifler']],type:'recipe',image:'assets/images/current-figma-menu-19-287-imgGorsel.png'},
     {title:'İyilik, köklerinden<br>geleceğe uzanır.',description:'Toprağın bereketine, üreticinin emeğine ve birlikte büyümenin gücüne inanıyoruz.',label:'YUDUM DÜNYASI',cta:'YUDUM DÜNYASI',href:'#iyilik',links:[['Hikayemiz','#haberler'],['Üretim Tesislerimiz & Kalite','https://yudumtoptan.com/'],['Sosyal Sorumluluk Projeleri','#iyilik']],type:'world',image:'assets/images/current-figma-menu-20-322-imgGorsel.png'},
-    {title:'Profesyonel<br>mutfakların ustalığı.',description:'Endüstriyel üretimden pastaneye; profesyonel mutfaklar için geliştirilmiş bitkisel yağlar.',label:'PROFESYONEL ÇÖZÜMLER',cta:'YUDUMTOPTAN',href:'https://yudumtoptan.com/',links:[['Endüstriyel Çözümler','#urunler',2],['Pastacılık Çözümleri','#urunler',2],['Yudum Professional','#urunler',2]],type:'professional',image:'assets/images/current-figma-menu-20-396-imgCizimBasak.svg'}
+    {title:'Profesyonel<br>mutfakların ustalığı.',description:'Endüstriyel üretimden pastaneye; profesyonel mutfaklar için geliştirilmiş bitkisel yağlar.',label:'PROFESYONEL ÇÖZÜMLER',cta:'YUDUMTOPTAN',href:'#urunler',links:[['Endüstriyel Çözümler','#urunler',2],['Pastacılık Çözümleri','#urunler',2],['Yudum Professional','#urunler',2]],type:'professional',image:'assets/images/current-figma-menu-20-396-imgCizimBasak.svg'}
   ];
   let activeMenu=-1,closeTimer,hideTimer;
   const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
