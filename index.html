@@ -602,6 +602,10 @@
 .stage .acc details>p{overflow:hidden}
 /* Yudum Dünyası: looping video in place of the landscape image. */
 .y-landscape .y-landscape-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+/* Stage CTA must match the site's 243x44 buttons at every width: counter the artboard scale. */
+@media(min-width:901px){
+ .stage .box,#s2 .box{width:calc(243px / var(--s));height:calc(44px / var(--s));font-size:calc(15px / var(--s));letter-spacing:calc(2.1px / var(--s))}
+}
 /* Section labels (İLHAM VEREN TARİFLER, …): bold cut of the custom Marcellus. */
 .y-kicker.y-section-label,.y-topline .y-kicker.y-section-label{font-family:var(--custom);font-weight:700;font-size:12px;line-height:18px}
 /* Social gallery: continuous marquee. JS wraps the tiles in .y-social-track and repeats them. */
@@ -1007,7 +1011,12 @@
       raf = requestAnimationFrame(tick);
     };
     new IntersectionObserver(function(ent){
-      if(ent[0].isIntersecting && !running){ running = true; tick(); }
+      if(ent[0].isIntersecting && !running){
+        running = true;
+        ry = Math.max(0, Math.min(scrollY / s, 1080));   // start from the current scroll, not the stale eased value
+        mx = tx; my = ty;
+        tick();
+      }
       else if(!ent[0].isIntersecting && running){ running = false; cancelAnimationFrame(raf); }
     }).observe(hero);
   }
