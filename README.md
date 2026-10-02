@@ -1,17 +1,12 @@
-# Yudum — editorial homepage redesign
+# Yudum — statik web sitesi
 
-Open `index.html` in a browser. Keep the assets folder alongside it. The accompanying `yudum-anasayfa-tek-dosya.html` is a standalone version with all local images and custom fonts embedded.
+`index.html` dosyasını tarayıcıda açın veya `start.command` dosyasını çalıştırıp http://127.0.0.1:8765/index.html adresine gidin. Başlatıcı yalnızca yerel statik önizleme sunar; Python 3 gerektirir.
 
-The sky hero and navigation styling are preserved. The product showcase follows the latest Figma instance 76:2714 and variants 76:757 / 76:866: exported sunflower and olive backdrops, exact product assets, green olive scene, blue Vala scene, and updated geometry. Shared product selectors and directional wipe transitions remain functional. Vala copy spacing and link width are adjusted to avoid overlap and clipped text. The lower page uses the original product-stage blue (#239FCC), terracotta (#AD5C34), and green (#20704A), with white botanical line drawings, uppercase custom serif typography, outlined liquid-fill buttons, and fluid layouts. It retains recipe and editorial carousels, project tabs, detail dialogs, a compact social strip, and the footer. The original top two sections retain their 1920px artboard scaling; the redesigned lower sections have responsive layouts.
+Ana sayfa `notes.css`, `content.js`, `site.js` ve `assets/` klasörünü kullanır. Metinler, tarif etiketleri ve medya yolları `content.js` içindedir. Bu dosya statik site verisidir; yönetim paneli veya kayıt API’si yoktur.
 
-Carousels support buttons, native touch scrolling, mouse dragging, and arrow/Home/End keys. Project tabs support arrow/Home/End keys. Dialogs support Escape, focus return, and backdrop close. Reduced motion is respected.
+Ürün geçişleri, tarif ve hikâye karuselleri, proje sekmeleri ve sayfa içi gezinme çalışır. Alt sayfalara giden ana sayfa bağlantıları kaldırılmıştır; butonlar korunmuştur. `detail.html`, `detail.js` ve `pages.css` mevcut statik alt sayfa dosyalarıdır.
 
-This remains a design concept. Editorial copy and recipe ideas are sample content, not a published news feed. Newsletter submission is a local demonstration: no email is sent or stored. The original search and product-detail placeholders above the redesign are retained. Archivo loads from Google Fonts, with system fallback offline.
-
-The lower-page brand restyle is preserved. Carousel, tab, dialog, and newsletter logic are unchanged. The latest product revision was checked in all three states, including accordions, keyboard switching, animated transitions and mobile overflow.
-
-## Validation
-Chrome checked at 390, 768, 1440, and 1920px: no document horizontal overflow. No JavaScript errors or broken local images. Checked carousel controls and mouse drag, project selection and keyboard navigation, dialog open/close, newsletter behavior, and original product tabs. Compared original and revised top sections visually.
+Bülten formu yerel bir gösterimdir; e-posta göndermez veya kaydetmez.
 
 ## References
 - Product design: https://www.figma.com/design/1DJ4NrXbxnjgrWL3t5HQho?node-id=76-2714

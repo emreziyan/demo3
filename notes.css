@@ -1,0 +1,142 @@
+/* Targeted client notes only. Original design rules remain in index.html.
+   Skipped: 1 (general image padding), 6 (right-side plus buttons), 10 (homepage expertise section). */
+.hero .lay[data-fade]{z-index:4;pointer-events:none}
+/* Readability: preserve the positions, typefaces and original hierarchy. */
+@media(min-width:901px){
+ .stage .txt,.stage #s1 .txt{font-size:18px;line-height:27px;width:290px}
+ .stage .acc details p{font-size:17px;line-height:25px}
+ .stage .acc summary{font-size:17px;letter-spacing:1.2px}
+ .stage .acc{width:330px}
+ #s0 .tag{font-size:34px;line-height:40px}
+ .hero .art{left:50%;transform:translateX(-50%) scale(var(--hero-s,var(--s)));transform-origin:top center}
+ .hero{height:calc(1080px * var(--hero-s,var(--s)))}
+ .nav__links{gap:26px}
+}
+@media(max-width:900px){.stage .txt,.stage #s1 .txt,.stage .acc details p{font-size:16px;line-height:24px}.stage .acc summary{font-size:14px}.hero{min-height:100svh}}
+@media(max-width:500px){.hero{height:max(720px,100svh)}}
+.y-recipe{display:block;text-decoration:none}
+.recipe-badges{position:absolute;left:19px;right:19px;bottom:19px;z-index:2;display:flex;flex-wrap:wrap;gap:6px}
+.recipe-badge{display:inline-flex;gap:5px;align-items:center;background:#efe8dcec;color:#45311f;font:11px/1.4 var(--sans);padding:6px 8px}
+.badge-icon{font-size:14px}
+.y-project-tabs button{opacity:.72}.y-project-tabs button[aria-selected=true]{opacity:1;border-bottom:3px solid #fff;text-shadow:0 0 1px currentColor}
+.y-project-tabs button[aria-selected=true]::before{content:'•';margin-right:7px}
+.y-landscape .project-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.y-tiryaki{width:100%;max-width:250px;height:auto;max-height:50px}
+.social-rail{position:fixed;right:6px;top:44%;z-index:15;display:flex;flex-direction:column;gap:5px;background:#efe8dcdd;padding:6px 5px;border-radius:2px}
+.social-rail .social-item{display:flex;align-items:center;justify-content:center;width:24px;height:28px}
+.social-rail img{width:16px;height:16px;object-fit:contain}
+.social-rail.is-obstructing{opacity:0;pointer-events:none}
+.social-item[aria-disabled=true]{opacity:.5}
+.y-footer-social .social-item img{width:20px;height:20px}
+#mega-image.notes-preview .mega-backdrop{display:none}
+#mega-image.notes-preview .mega-bottle{left:10%;top:5%;width:80%;height:85%;object-fit:contain}
+#mega-image.notes-preview.expertise .mega-bottle{left:0;top:0;width:100%;height:100%;object-fit:cover}
+#mega-links a.notes-sub{font-size:21px;min-height:50px;padding-left:22px}
+.mobile-note-links{display:none}
+.campaign-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero.campaign .art{display:none}
+@media(max-width:900px){.mobile-note-links{display:block;padding:4px 0 8px 16px}.nav__links .mobile-note-links a{font-size:12px;padding:9px 0;letter-spacing:.8px}.y-landscape .project-image{position:static;height:100%;object-fit:cover}.recipe-badges{left:10px;right:10px;bottom:10px}.recipe-badge{font-size:10px;padding:5px 7px}}
+
+/* Project tabs: backgrounds make each label read as a selectable control. */
+.y-project-tabs{height:auto;gap:8px;flex-wrap:wrap;padding-bottom:8px}
+.y-project-tabs button{padding:10px 12px;min-height:42px;background:rgba(255,255,255,.10);color:#fff;opacity:1;border-bottom:3px solid transparent;transition:background .2s,color .2s}
+.y-project-tabs button:hover{background:rgba(255,255,255,.18);opacity:1}
+.y-project-tabs button[aria-selected=true]{background:#efe8dc;color:#3a6033;border-bottom-color:#efe8dc;text-shadow:none}
+.y-project-tabs button:focus-visible{outline:2px solid #fff;outline-offset:3px}
+@media(max-width:600px){.y-project-tabs{gap:6px}.y-project-tabs button{padding:9px 8px}}
+
+/* Bottles sit in front of the opening headline. */
+.hero .lay:has(.hero__olive),.hero .lay:has(.hero__sun){z-index:5}
+
+/* Move the hero bottles toward the edges, with a light overlap at the headline. */
+@media(min-width:901px){.hero__olive{left:195px}.hero__sun{left:1440px}}
+@media(min-width:501px) and (max-width:900px){.hero__olive{left:17%}.hero__sun{left:65%}}
+@media(max-width:500px){.hero__olive{left:12%}.hero__sun{left:64%}}
+
+/* Footer fills one viewport while allowing content to grow on smaller screens. */
+.y-footer{min-height:100vh;display:flex;flex-direction:column}
+.y-footer-top,.y-footer-base{flex-shrink:0}
+.y-footer .y-sitemap{flex:1}
+
+/* Contact lands on a full footer viewport, with no preceding section visible. */
+.y-footer{scroll-margin-top:0}
+
+/* Preserve the pointer affordance on controls without a page destination. */
+a[role="button"]{cursor:pointer}
+
+/* Keep the top bar white in its normal, scrolled and open states. */
+.nav,.nav.solid,.nav.searching,.nav.menu-open,.nav.mega-open{background:#fff}
+.nav .nav__links a,.nav .nav__end>*,.nav .nav-toggle{color:#2a3a27}
+.nav #searchBtn img{filter:brightness(0)}
+@media(max-width:900px){
+ .nav .nav__links{background:#fff}
+ .nav .nav__links a{border-bottom-color:#2a3a272e}
+}
+
+/* Laptop typography: add two visible points, compensating for scaled artboards. */
+@media(min-width:901px) and (max-width:1700px){
+ :root{--laptop-type-step:2pt;--laptop-art-step:calc(var(--laptop-type-step) / var(--s));--laptop-hero-step:calc(var(--laptop-type-step) / var(--hero-s,var(--s)))}
+ .nav__links a{font-size:calc(12px + var(--laptop-art-step));line-height:calc(17.8px + var(--laptop-art-step))}
+ .nav__end .nav-language{font-size:calc(16px + var(--laptop-art-step));line-height:calc(15px + var(--laptop-art-step))}
+ .search input{font-size:calc(34px + var(--laptop-art-step));line-height:calc(40px + var(--laptop-art-step))}
+ .hero__title{font-size:calc(160px + var(--laptop-hero-step));line-height:calc(166px + var(--laptop-hero-step))}
+ .stage .word{font-size:calc(272px + var(--laptop-art-step));line-height:calc(218px + var(--laptop-art-step))}
+ .stage .tag,.stage #s0 .tag,.stage #s1 .tag,.stage #s2 .tag{font-size:calc(34px + var(--laptop-art-step));line-height:calc(40px + var(--laptop-art-step))}
+ .stage .tag,.stage #s0 .tag,.stage #s1 .tag{width:calc(259px + var(--laptop-art-step) * 7.62)}
+ .stage #s0 .txt{top:calc(514px + var(--laptop-art-step) * 3)}
+ .stage #s1 .txt{top:calc(499.8px + var(--laptop-art-step) * 3)}
+ .stage .txt,.stage #s1 .txt{font-size:calc(18px + var(--laptop-art-step));line-height:calc(27px + var(--laptop-art-step) * 1.5);width:calc(290px + var(--laptop-art-step) * 16.12)}
+ .stage #s2 .txt{font-size:calc(14px + var(--laptop-art-step));line-height:calc(22px + var(--laptop-art-step) * 1.5)}
+ .stage .acc{width:calc(330px + var(--laptop-art-step) * 19.42)}
+ .stage .acc summary{font-size:calc(17px + var(--laptop-art-step));line-height:calc(17.8px + var(--laptop-art-step))}
+ .stage .acc details p{font-size:calc(17px + var(--laptop-art-step));line-height:calc(25px + var(--laptop-art-step) * 1.5)}
+ .stage .idx-num{font-size:calc(80px + var(--laptop-art-step));line-height:calc(80px + var(--laptop-art-step))}
+ .stage .idx-of,.stage .idx-tot{font-size:calc(40px + var(--laptop-art-step));line-height:calc(64px + var(--laptop-art-step))}
+ .stage .cap10{font-size:calc(10px + var(--laptop-art-step));line-height:calc(14px + var(--laptop-art-step))}
+ .tab span{font-size:calc(14px + var(--laptop-art-step));line-height:calc(17.8px + var(--laptop-art-step))}
+ .tab[aria-selected="true"] span{font-size:calc(20px + var(--laptop-art-step))}
+ .box,.y-cta,.y-email-row .box{font-size:calc(15px + var(--laptop-type-step));line-height:calc(19px + var(--laptop-type-step))}
+ .stage .box,#s2 .box{font-size:calc((15px + var(--laptop-type-step)) / var(--s));line-height:calc((19px + var(--laptop-type-step)) / var(--s))}
+ .y-kicker{font-size:calc(10px + var(--laptop-type-step));line-height:calc(15px + var(--laptop-type-step))}
+ .y-kicker.y-section-label,.y-topline .y-kicker.y-section-label{font-size:calc(12px + var(--laptop-type-step));line-height:calc(18px + var(--laptop-type-step))}
+ .y-title,.y-intro .y-title,.y-nature .y-title,.y-journal .y-title{font-size:calc(clamp(44px,4.010417vw,77px) + var(--laptop-type-step))}
+ .y-intro p,.y-project-panel p{font-size:calc(15px + var(--laptop-type-step));line-height:calc(23px + var(--laptop-type-step))}
+ .y-project-panel p{line-height:calc(21.6px + var(--laptop-type-step))}
+ .y-cardline h3,.y-story h3{font-size:calc(clamp(26px,1.770833vw,34px) + var(--laptop-type-step));line-height:calc(40px + var(--laptop-type-step))}
+ .y-project-panel h3{font-size:calc(27px + var(--laptop-type-step));line-height:calc(40px + var(--laptop-type-step))}
+ .y-recipe small{font-size:calc(11px + var(--laptop-type-step));line-height:calc(16px + var(--laptop-type-step))}
+ .y-photo-tag{font-size:calc(9px + var(--laptop-type-step));line-height:calc(9px + var(--laptop-type-step))}
+ .recipe-badge{font-size:calc(11px + var(--laptop-type-step))}
+ .y-count{font-size:calc(14px + var(--laptop-type-step));line-height:calc(14px + var(--laptop-type-step))}
+ .y-count b{font-size:calc(27px + var(--laptop-type-step));line-height:calc(27px + var(--laptop-type-step))}
+ .y-nature-description{font-size:calc(clamp(21px,1.458333vw,28px) + var(--laptop-type-step))}
+ .y-project-tabs button{font-size:calc(11px + var(--laptop-type-step));line-height:calc(16px + var(--laptop-type-step))}
+ .y-story>.y-kicker,.y-social-heading .y-kicker{font-size:calc(9px + var(--laptop-type-step));line-height:calc(14px + var(--laptop-type-step))}
+ .y-story .y-story-bottom{font-size:calc(14px + var(--laptop-type-step));line-height:calc(16px + var(--laptop-type-step))}
+ .y-social-heading p{font-size:calc(34px + var(--laptop-type-step));line-height:calc(40px + var(--laptop-type-step))}
+ .y-social-links{font-size:calc(15px + var(--laptop-type-step));line-height:calc(19px + var(--laptop-type-step))}
+ .y-footer-tagline{font-size:calc(30px + var(--laptop-type-step));line-height:calc(46px + var(--laptop-type-step))}
+ .y-newsletter h3{font-size:calc(32px + var(--laptop-type-step));line-height:calc(46px + var(--laptop-type-step))}
+ .y-newsletter p,.y-email-row input{font-size:calc(14px + var(--laptop-type-step));line-height:calc(22px + var(--laptop-type-step))}
+ .y-footer nav h3{font-size:calc(11px + var(--laptop-type-step));line-height:calc(19px + var(--laptop-type-step))}
+ .y-footer nav li,.y-footer-contact{font-size:calc(13px + var(--laptop-type-step));line-height:calc(20px + var(--laptop-type-step))}
+ .y-footer-label{font-size:calc(11px + var(--laptop-type-step));line-height:calc(14px + var(--laptop-type-step))}
+ .y-footer-base,.y-footer-base>div{font-size:calc(12px + var(--laptop-type-step));line-height:calc(18px + var(--laptop-type-step))}
+ .mega h2{font-size:calc(40px + var(--laptop-type-step));line-height:calc(46px + var(--laptop-type-step))}
+ .mega-intro p{font-size:calc(14px + var(--laptop-type-step));line-height:calc(22px + var(--laptop-type-step))}
+ .mega h3{font-size:calc(15px + var(--laptop-type-step));line-height:calc(19px + var(--laptop-type-step))}
+ #mega-links a{font-size:calc(28px + var(--laptop-type-step));line-height:calc(32px + var(--laptop-type-step))}
+ #mega-links a.notes-sub{font-size:calc(21px + var(--laptop-type-step))}
+ .mega-image span{font-size:calc(14px + var(--laptop-type-step));line-height:calc(18px + var(--laptop-type-step))}
+}
+@media(min-width:901px) and (max-width:1500px){
+ .stage #s0 .txt{top:calc(499.8px + var(--laptop-art-step) * 3)}
+ .mega h2{font-size:calc(32px + var(--laptop-type-step));line-height:calc(38px + var(--laptop-type-step))}
+ #mega-links a{font-size:calc(22px + var(--laptop-type-step));line-height:calc(28px + var(--laptop-type-step))}
+}
+
+/* Thin botanical icons identify the two product categories. */
+.stage .product-tab-icon{display:block;flex:none;width:28px;height:28px;color:inherit;stroke-width:4}
+@media(min-width:901px){
+ .stage .product-tab-icon{width:calc(28px / var(--s));height:calc(28px / var(--s))}
+}
