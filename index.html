@@ -691,6 +691,7 @@
 
 </style>
 <link rel="stylesheet" href="notes.css">
+<link rel="stylesheet" href="journey.css">
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
   <symbol id="sunflower" viewBox="-50 -50 100 100">
@@ -848,6 +849,49 @@
     </div>
   </section>
 
+  <!-- ②·⁵ YAĞ UZMANLIĞIMIZ — pinned scroll section (draft imagery) -->
+  <section class="jr" id="uzmanlik" aria-labelledby="jr-title">
+    <div class="jr-sticky">
+      <div class="jr-media" aria-hidden="true">
+        <figure><img src="assets/images/uzmanlik-tadim-draft.png" alt="Mavi tadım bardağıyla zeytinyağını değerlendiren uzman" loading="lazy" draggable="false"></figure>
+        <figure><img src="assets/images/uzmanlik-uretim-draft.png" alt="Modern yağ üretim tesisinde kalite kontrolü yapan uzman" loading="lazy" draggable="false"></figure>
+        <figure><img src="assets/images/uzmanlik-kizartma-draft.png" alt="Yağ sıcaklığını termometreyle kontrol ederek patates kızartan uzman şef" loading="lazy" draggable="false"></figure>
+      </div>
+      <span class="jr-grain" aria-hidden="true"></span>
+      <div class="jr-inner">
+        <div class="jr-top">
+          <div>
+            <p class="jr-kicker" id="jr-title">YAĞ UZMANLIĞIMIZ</p>
+            <p class="jr-lead">Ar-Ge’den üretim tesisine, kalite kontrolünden tadım masasına: Yudum’un bilgisi her şişede.</p>
+          </div>
+        </div>
+        <ol class="jr-steps">
+        <li class="jr-step" id="jr-step-01">
+          <span class="jr-shot"><img src="assets/images/uzmanlik-tadim-draft.png" alt="Mavi tadım bardağıyla zeytinyağını değerlendiren uzman" loading="lazy" draggable="false"></span>
+          <span class="jr-num">01</span>
+          <h3>Kokudan lezzete,<br>zeytinyağını yakından tanıyın.</h3>
+          <p>Zeytinyağının koku, tat ve dokusunu keşfetmeye davetlisiniz. Bu bölümde tadım dünyasından notlar ve uzmanlarımızın anlatımları yer alacak.</p>
+        </li>
+        <li class="jr-step" id="jr-step-02">
+          <span class="jr-shot"><img src="assets/images/uzmanlik-uretim-draft.png" alt="Modern yağ üretim tesisinde kalite kontrolü yapan uzman" loading="lazy" draggable="false"></span>
+          <span class="jr-num">02</span>
+          <h3>Zeytinlikten sofraya<br>uzanan yolculuk.</h3>
+          <p>Zeytinin yolculuğu, üretim süreçleri ve farklı zeytinyağı çeşitleri. Bu bölüm, Yudum uzmanlarının paylaşacağı içeriklerle genişleyecek.</p>
+        </li>
+        <li class="jr-step" id="jr-step-03">
+          <span class="jr-shot"><img src="assets/images/uzmanlik-kizartma-draft.png" alt="Yağ sıcaklığını termometreyle kontrol ederek patates kızartan uzman şef" loading="lazy" draggable="false"></span>
+          <span class="jr-num">03</span>
+          <h3>Mutfağınıza eşlik eden<br><em>uzmanlık.</em></h3>
+          <p>Yağ seçimi ve pişirme teknikleri üzerine uzmanlarımızın hazırlayacağı mutfak notlarını burada bulabileceksiniz.</p>
+        </li>
+        </ol>
+        <div class="jr-marquee">
+          <div><button type="button" data-step="0">Zeytinyağı Tadımı</button><button type="button" data-step="1">Zeytinyağına Dair Bilgiler</button><button type="button" data-step="2">Kızartmanın Püf Noktaları</button><button type="button" data-step="0" aria-hidden="true" tabindex="-1">Zeytinyağı Tadımı</button><button type="button" data-step="1" aria-hidden="true" tabindex="-1">Zeytinyağına Dair Bilgiler</button><button type="button" data-step="2" aria-hidden="true" tabindex="-1">Kızartmanın Püf Noktaları</button><button type="button" data-step="0" aria-hidden="true" tabindex="-1">Zeytinyağı Tadımı</button><button type="button" data-step="1" aria-hidden="true" tabindex="-1">Zeytinyağına Dair Bilgiler</button><button type="button" data-step="2" aria-hidden="true" tabindex="-1">Kızartmanın Püf Noktaları</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="y-section y-recipes" id="tarifler" aria-labelledby="recipes-title" data-carousel>
     <div class="y-topline"><span class="y-kicker y-section-label">İLHAM VEREN TARİFLER</span><button class="box marsc y-cta" data-detail="collection">SOFRANA İLHAM BUL</button></div>
     <div class="y-intro"><img class="y-brand-flower" src="assets/images/current-imgAycicegiCizimi1.svg" alt=""><h2 class="y-title" id="recipes-title">Hafif bir fikir,<br><em>sıcak bir sofra.</em></h2><p>Mevsimin en güzel malzemeleri, bir yudum ilham. Her gün yeniden keşfedilecek lezzetler.</p></div>
@@ -915,6 +959,7 @@
 
 <script src="content.js"></script>
 <script src="site.js"></script>
+<script src="journey.js" defer></script>
 <script>
 (function(){
   var root = document.documentElement;

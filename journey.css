@@ -1,0 +1,112 @@
+/* ── "Tarladan sofraya" — pinned scroll journey, inserted after the product stage.
+   Everything is scoped under .jr so no existing rule is affected. ── */
+.jr{
+  scroll-margin-top:70px;
+  --jr-ink:#F2F1E6;
+  --jr-dim:rgba(242,241,230,.66);
+  --jr-rule:rgba(242,241,230,.28);
+  --jr-bg:#171A13;
+  --jr-pad:clamp(24px,4.2vw,80px);
+  --jr-ease:cubic-bezier(.16,1,.3,1);
+  position:relative;
+  background:var(--jr-bg);
+  color:var(--jr-ink);
+}
+.jr *{box-sizing:border-box}
+.jr-sticky{position:relative;overflow:hidden;background:var(--jr-bg)}
+.jr-media{position:absolute;inset:0;z-index:0}
+.jr-media figure{position:absolute;inset:0;margin:0;opacity:0;visibility:hidden}
+.jr-media img{width:100%;height:100%;object-fit:cover;display:block}
+.jr-media figure::after{content:'';position:absolute;inset:0;
+  background:linear-gradient(100deg,rgba(23,26,19,.90) 0%,rgba(23,26,19,.76) 38%,rgba(23,26,19,.38) 70%,rgba(23,26,19,.66) 100%)}
+.jr-grain{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.5;
+  background:radial-gradient(120% 90% at 18% 20%,transparent 40%,rgba(23,26,19,.55) 100%)}
+.jr-inner{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:space-between;
+  padding:clamp(96px,11vh,150px) var(--jr-pad) clamp(28px,4vh,46px)}
+.jr-top{display:flex;align-items:flex-start;justify-content:space-between;gap:24px}
+.jr-kicker{font:700 12px/18px var(--custom,var(--mar));letter-spacing:1.9px;text-transform:uppercase;margin:0}
+.jr-lead{font:400 clamp(13px,1vw,15px)/1.6 var(--sans);color:var(--jr-dim);margin:14px 0 0;max-width:34ch}
+.jr-steps{list-style:none;margin:0;padding:0}
+.jr-step{position:absolute;left:var(--jr-pad);right:var(--jr-pad);bottom:clamp(96px,14vh,170px);
+  max-width:min(760px,62%);opacity:0;visibility:hidden}
+.jr-num{display:block;font:400 clamp(56px,7.4vw,124px)/1 var(--mar);letter-spacing:-.02em;
+  color:rgba(242,241,230,.92);-webkit-text-stroke:0;margin:0 0 clamp(10px,1.4vw,20px)}
+.jr-step h3{font:400 clamp(34px,4.4vw,78px)/1.04 var(--mar);letter-spacing:-.01em;margin:0}
+.jr-step h3 em{font:inherit;font-style:italic;color:#C8D2B4}
+.jr-step p{font:400 clamp(14px,1.05vw,17px)/1.75 var(--sans);color:var(--jr-dim);margin:clamp(14px,1.6vw,22px) 0 0;max-width:46ch}
+/* kinetic bottom line */
+.jr-marquee{position:relative;z-index:2;overflow:hidden;border-top:1px solid var(--jr-rule);padding-top:clamp(14px,1.8vh,22px)}
+.jr-marquee div{display:flex;gap:46px;width:max-content;white-space:nowrap;
+  font:400 clamp(20px,2.3vw,38px)/1.1 var(--mar);letter-spacing:.01em;color:rgba(242,241,230,.5);
+  translate:calc(var(--jr-shift,0) * -1px) 0}
+.jr-marquee span{display:block}
+.jr-marquee button{display:block;background:none;border:0;padding:0;cursor:pointer;color:inherit;font:inherit;
+  letter-spacing:inherit;white-space:nowrap;transition:color .35s var(--jr-ease)}
+.jr-marquee button:hover,.jr-marquee button:focus-visible{color:var(--jr-ink)}
+.jr-marquee button:focus-visible{outline:1px solid var(--jr-ink);outline-offset:6px}
+.jr-marquee button[aria-current="true"]{color:var(--jr-ink)}
+
+/* ── desktop: pinned panel driven by scroll ── */
+@media(min-width:901px){
+  .jr{height:calc(var(--jr-count,4) * 92vh + 100vh)}
+  .jr-sticky{position:sticky;top:0;height:100vh}
+  .jr-media figure{transition:opacity .9s var(--jr-ease),visibility .9s}
+  .jr-media img{transform:scale(1.08) translateY(var(--jr-par,0px));transition:transform 1.4s var(--jr-ease)}
+  .jr-media figure.is-on{opacity:1;visibility:visible}
+  .jr-media figure.is-on img{transform:scale(1) translateY(var(--jr-par,0px))}
+  /* Anchored to a fixed top so 01/02/03 always sit at the same height. */
+  .jr-step{top:clamp(230px,33vh,420px);bottom:auto;transition:opacity .55s var(--jr-ease),visibility .55s}
+  .jr-step>*{opacity:0;transform:translateY(26px);transition:opacity .6s var(--jr-ease),transform .9s var(--jr-ease)}
+  .jr-step.is-on{opacity:1;visibility:visible}
+  .jr-step.is-on>*{opacity:1;transform:none}
+  .jr-step.is-on .jr-num{transition-delay:.04s}
+  .jr-step.is-on h3{transition-delay:.1s}
+  .jr-step.is-on p{transition-delay:.18s}
+}
+
+/* Wide but short laptops: tighten the block so the copy never reaches the strip. */
+@media(min-width:901px) and (max-height:860px){
+  .jr-step{top:clamp(180px,25vh,330px)}
+  .jr-num{font-size:clamp(44px,4.6vw,84px)}
+  .jr-step h3{font-size:clamp(30px,3.3vw,54px)}
+  .jr-step p{font-size:14px;line-height:1.65;margin-top:14px}
+  .jr-inner{padding-top:clamp(84px,10vh,120px)}
+}
+
+/* ── mobile / short screens: plain stacked story, no pinning ── */
+@media(max-width:900px){
+  .jr{height:auto}
+  .jr-sticky{height:auto}
+  .jr-inner{display:block;padding:40px var(--jr-pad) 30px}
+  .jr-media,.jr-grain{display:none}
+  .jr-top{display:block}
+  .jr-steps{margin-top:34px}
+  .jr-step{position:relative;left:auto;right:auto;bottom:auto;max-width:none;opacity:1;visibility:visible;
+    padding:28px 0;border-top:1px solid var(--jr-rule)}
+  .jr-step:first-child{border-top:0;padding-top:6px}
+  .jr-shot{display:block;width:100%;aspect-ratio:16/11;overflow:hidden;margin:0 0 20px;background:#20251c}
+  .jr-shot img{width:100%;height:100%;object-fit:cover;display:block;
+    transition:opacity .8s var(--jr-ease),transform 1.2s var(--jr-ease)}
+  .jr.is-ready .jr-step:not(.is-seen) .jr-shot img{opacity:0;transform:scale(1.06)}
+  .jr-num{font-size:40px;margin-bottom:8px}
+  /* Phones: the strip becomes a plain wrapped list so every title is reachable. */
+  .jr-marquee{margin-top:26px}
+  .jr-marquee div{width:auto;flex-wrap:wrap;white-space:normal;gap:2px 26px;translate:none;
+    font-size:clamp(17px,4.6vw,22px);line-height:1.3}
+  .jr-marquee button[aria-hidden="true"]{display:none}
+  .jr-marquee button{padding:11px 0;min-height:44px}
+}
+@media(min-width:901px){.jr-shot{display:none}}
+
+@media(prefers-reduced-motion:reduce){
+  .jr{height:auto}
+  .jr-sticky{position:static;height:auto}
+  .jr-media,.jr-grain{display:none}
+  .jr-inner{display:block;padding:40px var(--jr-pad) 30px}
+  .jr-step{position:relative;left:auto;right:auto;bottom:auto;max-width:none;opacity:1;visibility:visible;
+    padding:26px 0;border-top:1px solid var(--jr-rule)}
+  .jr-step>*{opacity:1;transform:none;transition:none}
+  .jr-shot{display:block;width:100%;aspect-ratio:16/11;overflow:hidden;margin:0 0 18px}
+  .jr-shot img{width:100%;height:100%;object-fit:cover;opacity:1;transform:none;transition:none}
+  .jr-marquee div{translate:none}
+}
